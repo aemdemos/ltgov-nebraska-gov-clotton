@@ -75,7 +75,7 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-s);
   line-height: 1.6;
-  background-image: url("../icons/UNL_Quilt_Center_-_Lincoln,_NE.jpg");
+  background-image: url("../icons/background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50% -5%;
