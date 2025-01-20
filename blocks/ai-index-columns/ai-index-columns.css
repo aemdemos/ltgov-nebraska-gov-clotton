@@ -39,8 +39,7 @@
   flex-direction: row; /* Ensure nested elements are stacked vertically */
   gap: 20px; /* Increase space between headings and paragraphs */
   text-align: left; /* Ensure text is aligned to the left */
-    background-color: rgba(255, 255, 255, 0.7);
-
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* Ensure the image is responsive */
