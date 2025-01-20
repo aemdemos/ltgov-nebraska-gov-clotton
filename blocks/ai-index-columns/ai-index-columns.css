@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: var(--background-color); /* Ensure background color is set */
 }
 
 /* Ensure the columns are side-by-side */
@@ -40,6 +39,8 @@
   flex-direction: row; /* Ensure nested elements are stacked vertically */
   gap: 20px; /* Increase space between headings and paragraphs */
   text-align: left; /* Ensure text is aligned to the left */
+    background-color: rgba(255, 255, 255, 0.7);
+
 }
 
 /* Ensure the image is responsive */
@@ -62,6 +63,7 @@
   max-width: 1200px; /* Match max width */
   margin: 20px 0;
   gap: 20px; /* Space between sections */
+
 }
 
 @media (min-width: 900px) {

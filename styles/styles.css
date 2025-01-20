@@ -69,13 +69,16 @@
 }
 
 body {
-  display: none;
+    display: none;
   margin: 0;
-  background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-s);
   line-height: 1.6;
+    background-image: url("../icons/UNL_Quilt_Center_-_Lincoln,_NE.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% -5%;
 }
 
 a {
@@ -221,6 +224,7 @@ a.button.secondary, button.secondary {
 /* sections */
 main>.section {
   margin: 40px 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 main>.section>div {
