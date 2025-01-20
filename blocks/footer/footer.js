@@ -17,4 +17,21 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
+
+  const paragraphs = document.querySelectorAll('footer p');
+  if (paragraphs.length >= 4) {
+    // Create a new <div> element
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('footer-content');
+
+    // Insert the new <div> before the first <p>
+    const parent = paragraphs[0].parentNode;
+    parent.insertBefore(newDiv, paragraphs[0]);
+    paragraphs[3].classList.add('footer-copyright');
+
+    // Move the first two <p> elements into the new <div>
+    newDiv.appendChild(paragraphs[0]);
+    newDiv.appendChild(paragraphs[1]);
+    newDiv.appendChild(paragraphs[2]);
+  }
 }
