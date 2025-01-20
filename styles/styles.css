@@ -33,17 +33,6 @@
 
 /* fallback fonts */
 @font-face {
-  font-family:"Carrois Gothic Fallback";
-  font-style:normal;
-  font-weight:400;
-  src:local("Arial");
-  ascent-override:93.48%;
-  descent-override:27.37%;
-  line-gap-override:0.00%;
-  size-adjust:98.63%;
-}
-
-@font-face {
   font-family:"Open Sans Fallback";
   font-style:normal;
   font-weight:600;
@@ -52,6 +41,17 @@
   descent-override:28.99%;
   line-gap-override:0.00%;
   size-adjust:101.06%;
+}
+
+@font-face {
+  font-family:"Carrois Gothic Fallback";
+  font-style:normal;
+  font-weight:400;
+  src:local("Arial");
+  ascent-override:93.48%;
+  descent-override:27.37%;
+  line-gap-override:0.00%;
+  size-adjust:98.63%;
 }
 
 @media (width>=900px) {
