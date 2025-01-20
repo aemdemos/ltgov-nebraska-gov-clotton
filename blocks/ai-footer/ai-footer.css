@@ -1,0 +1,81 @@
+
+.ai-footer-wrapper {
+  background-color: #222; /* Set dark background color */
+  padding: 20px; /* Add padding for spacing */
+  color: white; /* Set text color to white */
+}
+
+.ai-footer {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the three columns */
+  flex-wrap: nowrap; /* Ensure it doesn't wrap */
+}
+
+.ai-footer > div {
+  display: flex;
+  flex-direction: row; /* Ensure top-level divs are side by side */
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ai-footer > div > div {
+  flex: 1; /* Each column takes up equal space */
+  min-width: 200px; /* Ensure columns do not get too narrow */
+  display: flex;
+  flex-direction: row; /* Ensure items inside columns are side by side */
+  align-items: center; /* Center items vertically */
+}
+
+.ai-footer p {
+  margin: 0 0 10px; /* Add margin between paragraphs */
+}
+
+.ai-footer p:last-child {
+  flex-basis: 100%; /* Ensure footer spans full width */
+  text-align: center; /* Center the footer text */
+  margin-top: 20px; /* Add margin to separate from content above */
+}
+
+.ai-footer p.button-container {
+  display: flex;
+  justify-content: flex-end; /* Align button to the right */
+  margin-right: 0; /* Remove any right margin to align to the edge */
+}
+
+.ai-footer a {
+  color: #007bff; /* Set link color */
+}
+
+.ai-footer a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.ai-footer .button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Round corners */
+  align-self: flex-end; /* Align button to the right */
+}
+
+/* Specific styling for the address column */
+.ai-footer > div > div:first-child {
+  flex-direction: column; /* Stack address elements vertically */
+  align-items: flex-start; /* Align address elements to the start */
+}
+
+/* Specific styling for the middle column links */
+.ai-footer p:nth-of-type(2) {
+  display: flex;
+  justify-content: center; /* Center the links within the column */
+  gap: 10px; /* Add spacing between the links */
+  margin: 0 auto; /* Center the entire row */
+  flex-direction: row; /* Ensure links are in a row */
+  align-items: center; /* Ensure links are vertically centered */
+}
+
+/* Specific styling for the button column */
+.ai-footer > div > div:last-child {
+  justify-content: flex-end; /* Align button to the right edge */
+}

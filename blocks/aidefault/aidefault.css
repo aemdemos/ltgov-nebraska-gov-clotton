@@ -4,6 +4,12 @@
   padding: 10px;
 }
 
+.aidefault-wrapper .aidefault > div {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side alignment */
+  align-items: center;
+}
+
 .aidefault-wrapper .aidefault > div > div {
   display: flex;
   flex-direction: row; /* Ensure side-by-side alignment */
@@ -11,35 +17,40 @@
 }
 
 .aidefault-wrapper .aidefault p:first-child {
-  margin-right: 10px;
+  margin-right: 15px; /* Increase margin between image and text */
 }
 
 .aidefault-wrapper .aidefault p:first-child picture img {
-  width: 50px; /* Adjust the width to make the emblem smaller */
+  width: 80px; /* Adjust the width to make the emblem larger */
   height: auto;
+  border-radius: 50%; /* Make the image circular */
 }
 
 .aidefault-wrapper .aidefault .button-container {
   display: flex;
-  flex-direction: row; /* Ensure title and subtitle are on separate lines */
-  align-items: center;
+  flex-direction: column; /* Ensure title and subtitle are on separate lines */
+  align-items: flex-start;
 }
 
 .aidefault-wrapper .aidefault .button-container a {
-  display: flex;
-  flex-direction: column;
   color: white; /* Change text color to white */
   font-weight: bold; /* Make text bold */
   text-decoration: none; /* Remove underline */
   background: none; /* Remove button-like appearance */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margin */
+  font-size: 1.5em; /* Larger font size for the first line */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  display: block;
 }
 
-.aidefault-wrapper .aidefault .button-container a span {
-  display: block;
-  font-weight: normal; /* Make subtitle normal weight */
-  margin-top: 5px; /* Add some space between title and subtitle */
+.aidefault-wrapper .aidefault .button-container a::after {
+  content: "Office of the Lieutenant Governor";
+  display: block; /* Make the additional text on a new line */
+  font-size: 0.8em; /* Smaller font size for the second line */
+  font-weight: normal; /* Normal weight for the second line */
+  margin-top: 5px; /* Add space between title and subtitle */
+  line-height: 1.2; /* Adjust line height for better spacing */
 }
 
 .aidefault-wrapper .aidefault p:last-child {

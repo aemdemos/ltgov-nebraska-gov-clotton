@@ -32,7 +32,7 @@ header nav a:any-link {
   color: white; /* set link color to white */
   text-decoration: none;
   white-space: nowrap; /* prevent text from wrapping */
-  margin: 0 16px; /* add spacing between links */
+  margin: 0 10px; /* adjust spacing between links */
 }
 
 /* hamburger */
@@ -62,24 +62,23 @@ header nav .nav-sections {
   flex: 1 1 auto;
   display: flex; /* display as flex */
   flex-direction: row; /* align items side by side */
-  visibility: visible;
-  justify-content: center; /* center items */
+  justify-content: space-between; /* evenly distribute items */
   width: 100%; /* ensure sections take full width */
 }
 
 header nav .nav-sections ul {
   list-style: none;
   display: flex; /* enable horizontal layout */
-  flex-grow: 1; /* allow ul to grow and fill space */
-  justify-content: space-evenly; /* evenly distribute items */
+  justify-content: space-between; /* evenly distribute items */
   padding-left: 0;
   font-size: var(--body-font-size-s);
   margin: 0;
+  width: 100%;
 }
 
 header nav .nav-sections ul > li {
   font-weight: 500;
-  margin: 0 16px; /* add spacing between list items */
+  margin: 0 10px; /* adjust spacing between list items */
 }
 
 header nav .nav-sections ul > li > ul {

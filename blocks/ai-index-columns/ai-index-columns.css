@@ -1,55 +1,55 @@
 
+/* Scope the CSS to the ai-index-columns-wrapper class */
 .ai-index-columns-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: 100%;
-  background-color: #f0f0f0; /* assuming a light grey background */
+  background-color: var(--background-color); /* Ensure background color is set */
 }
 
+/* Ensure the columns are side-by-side */
 .ai-index-columns-wrapper > .ai-index-columns {
   display: flex;
-  flex-direction: row; /* Ensure side-by-side layout */
+  flex-direction: row; /* Side-by-side layout */
   gap: 20px; /* Space between the two columns */
   width: 100%;
   max-width: 1200px; /* Adjust max width as needed */
   margin: 20px auto; /* Center the block and add vertical margin */
+  align-items: flex-start; /* Align items to the top */
 }
 
+/* Image container styling */
 .ai-index-columns-wrapper .ai-index-columns > div:first-child {
-  flex: 1; /* Image and caption column */
+  flex: 0 0 auto; /* Ensure it maintains its size */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: flex-start; /* Align to the top left */
+  justify-content: flex-start; /* Align to the top */
+  text-align: left; /* Ensure text is aligned to the left */
 }
 
+/* Text content container styling */
 .ai-index-columns-wrapper .ai-index-columns > div:last-child {
-  flex: 2; /* Text content column */
+  flex: 1; /* Allow it to grow and fill the space */
   display: flex;
   flex-direction: column; /* Ensure nested elements are stacked vertically */
   gap: 20px; /* Increase space between headings and paragraphs */
   text-align: left; /* Ensure text is aligned to the left */
 }
 
-.ai-index-columns-wrapper .ai-index-columns > div:last-child > div {
-  display: flex;
-  flex-direction: row; /* Ensure side-by-side layout for nested elements */
-  flex-wrap: wrap; /* Allow wrapping of nested elements */
-  gap: 10px; /* Space between headings and paragraphs */
-}
-
+/* Ensure the image is responsive */
 .ai-index-columns-wrapper .ai-index-columns img {
   max-width: 100%;
   height: auto;
 }
 
+/* List styling */
 .ai-index-columns-wrapper .ai-index-columns ul {
   padding-left: 20px;
   margin-bottom: 20px;
 }
 
+/* Additional section styling */
 .ai-index-columns-wrapper > .ai-index-columns + div {
   display: flex;
   flex-direction: column;
@@ -61,6 +61,6 @@
 
 @media (min-width: 900px) {
   .ai-index-columns-wrapper > .ai-index-columns {
-    align-items: start;
+    align-items: flex-start; /* Align items to the top */
   }
 }
