@@ -1,7 +1,7 @@
 
 .ai-footer-wrapper {
   background-color: #222; /* Set dark background color */
-  padding: 20px; /* Add padding for spacing */
+  padding: 1% 10%; /* Add padding for spacing */
   color: white; /* Set text color to white */
 }
 
@@ -30,39 +30,43 @@
   margin: 0 0 10px; /* Add margin between paragraphs */
 }
 
-.ai-footer p:last-child {
-  flex-basis: 100%; /* Ensure footer spans full width */
-  text-align: center; /* Center the footer text */
-  margin-top: 20px; /* Add margin to separate from content above */
-}
-
-.ai-footer p.button-container {
-  display: flex;
-  justify-content: flex-end; /* Align button to the right */
-  margin-right: 0; /* Remove any right margin to align to the edge */
+.ai-footer .footer-copyright {
+  font-size: 9px;
 }
 
 .ai-footer a {
-  color: #007bff; /* Set link color */
-}
-
-.ai-footer a:hover {
-  text-decoration: underline; /* Add underline on hover */
+  color: #337ab7; /* Set link color */
 }
 
 .ai-footer .button {
-  background-color: #007bff; /* Button background color */
-  color: white; /* Button text color */
-  padding: 10px 20px; /* Button padding */
+  background-color: unset; /* Button background color */
+  color: #337ab7; /* Button text color */
+  padding: 0; /* Button padding */
   text-decoration: none; /* Remove underline */
-  border-radius: 5px; /* Round corners */
   align-self: flex-end; /* Align button to the right */
+  margin: 0;
+}
+
+.ai-footer a:hover, .ai-footer .button:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.ai-footer .footer-content {
+    display: flex; /* Use flexbox for layout */
+    width: 100%;
+    align-items: flex-start; /* Center elements horizontally */
+}
+
+.ai-footer a.button:any-link {
+    margin: unset;
+    padding: unset;
+    background-color: unset;
+    color: #337ab7;
 }
 
 /* Specific styling for the address column */
 .ai-footer > div > div:first-child {
   flex-direction: column; /* Stack address elements vertically */
-  align-items: flex-start; /* Align address elements to the start */
 }
 
 /* Specific styling for the middle column links */
