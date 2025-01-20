@@ -11,6 +11,21 @@
           "id": "1-1",
           "blocks": [
             {
+              "id": "box-id-1722200707",
+              "x": 0,
+              "y": 0,
+              "width": 3280,
+              "height": 84,
+              "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]",
+              "layout": {
+                "numCols": 0,
+                "numRows": 0
+              },
+              "color": "rgb(148, 0, 211)",
+              "mapping": "defaultContent",
+              "customBlockName": "aidefault"
+            },
+            {
               "id": "box-id-229446221",
               "x": 0,
               "y": 84,
@@ -37,21 +52,6 @@
         {
           "id": "2-1",
           "blocks": [
-            {
-              "id": "box-id-1722200707",
-              "x": 0,
-              "y": 0,
-              "width": 3280,
-              "height": 84,
-              "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]",
-              "layout": {
-                "numCols": 0,
-                "numRows": 0
-              },
-              "color": "rgb(148, 0, 211)",
-              "mapping": "defaultContent",
-              "customBlockName": "aidefault"
-            },
             {
               "id": "box-id-1722200738",
               "x": 1055,
@@ -102,7 +102,7 @@
               },
               "color": "rgb(0, 255, 0)",
               "mapping": "defaultContent",
-              "customBlockName": "ai-footer-columns"
+              "customBlockName": "ai-footer"
             }
           ],
           "settings": {}
