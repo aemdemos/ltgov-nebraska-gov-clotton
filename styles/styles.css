@@ -63,7 +63,7 @@
     --heading-font-size-xl: 22px;
     --heading-font-size-l: 20px;
     --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
+    --heading-font-size-s: 12px;
     --heading-font-size-xs: 18px;
   }
 }
@@ -74,7 +74,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   line-height: 1.6;
 }
 
