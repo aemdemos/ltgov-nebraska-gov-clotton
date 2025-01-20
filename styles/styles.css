@@ -15,7 +15,7 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
+  --link-color: #337ab7;
   --link-hover-color: #1d3ecf;
   --body-font-family: "carrois gothic", "Helvetica", "Arial", "sans-serif";
   --heading-font-family: "carrois gothic", "Helvetica", "Arial", "sans-serif";
@@ -56,12 +56,12 @@
 
 @media (width>=900px) {
   :root {
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
+    --body-font-size-m: 14px;
+    --body-font-size-s: 12px;
+    --body-font-size-xs: 10px;
     --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
+    --heading-font-size-xl: 22px;
+    --heading-font-size-l: 20px;
     --heading-font-size-m: 22px;
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
@@ -76,6 +76,10 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
+}
+
+a {
+    color: #337ab7;
 }
 
 body.appear {
@@ -104,11 +108,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: var(--heading-font-size-xxl);
+  font-size: var(--heading-font-size-xl);
 }
 
 h2 {
-  font-size: var(--heading-font-size-xl);
+  font-size: var(--heading-font-size-l);
+  color: #337ab7;
 }
 
 h3 {
@@ -154,7 +159,6 @@ input, textarea, select, button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
   text-decoration: none;
   word-break: break-word;
 }
@@ -201,12 +205,6 @@ a.button.secondary, button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
   color: var(--text-color);
-}
-
-main img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
 }
 
 .icon {
