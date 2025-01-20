@@ -1,0 +1,47 @@
+
+.aidefault-wrapper {
+  background-color: #2C3E50; /* Dark blue background color */
+  padding: 10px;
+}
+
+.aidefault-wrapper .aidefault > div > div {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side alignment */
+  align-items: center;
+}
+
+.aidefault-wrapper .aidefault p:first-child {
+  margin-right: 10px;
+}
+
+.aidefault-wrapper .aidefault p:first-child picture img {
+  width: 50px; /* Adjust the width to make the emblem smaller */
+  height: auto;
+}
+
+.aidefault-wrapper .aidefault .button-container {
+  display: flex;
+  flex-direction: row; /* Ensure title and subtitle are on separate lines */
+  align-items: center;
+}
+
+.aidefault-wrapper .aidefault .button-container a {
+  display: flex;
+  flex-direction: column;
+  color: white; /* Change text color to white */
+  font-weight: bold; /* Make text bold */
+  text-decoration: none; /* Remove underline */
+  background: none; /* Remove button-like appearance */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.aidefault-wrapper .aidefault .button-container a span {
+  display: block;
+  font-weight: normal; /* Make subtitle normal weight */
+  margin-top: 5px; /* Add some space between title and subtitle */
+}
+
+.aidefault-wrapper .aidefault p:last-child {
+  display: none; /* Hide the last paragraph with script text */
+}

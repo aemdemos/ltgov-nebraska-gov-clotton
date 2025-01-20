@@ -1,0 +1,74 @@
+
+.ai-footer-columns-wrapper {
+  background-color: #1a1a1a; /* Dark background color */
+  color: white; /* White text color */
+  padding: 20px; /* Add padding */
+}
+
+.ai-footer-columns-wrapper > .ai-footer-columns > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.ai-footer-columns-wrapper > .ai-footer-columns > div > div {
+  display: flex;
+  flex-direction: row; /* Ensure elements are side-by-side */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.ai-footer-columns-wrapper > .ai-footer-columns > div > div:first-child {
+  flex: 1 1 30%;
+  text-align: left;
+}
+
+.ai-footer-columns-wrapper > .ai-footer-columns > div > div:nth-child(2) {
+  flex: 1 1 40%;
+  text-align: center;
+  justify-content: center;
+}
+
+.ai-footer-columns-wrapper > .ai-footer-columns > div > div:last-child {
+  flex: 1 1 30%;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.ai-footer-columns-wrapper p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.ai-footer-columns-wrapper .button-container {
+  text-align: right;
+}
+
+.ai-footer-columns-wrapper .button-container .button {
+  color: white; /* White text color */
+  background-color: transparent; /* Transparent background */
+  text-decoration: underline;
+  padding: 0;
+  border: none; /* Remove border */
+  cursor: pointer;
+  align-self: flex-end; /* Align the button to the bottom */
+}
+
+.ai-footer-columns-wrapper p:last-of-type {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ai-footer-columns-wrapper a.button {
+  background: none;
+  color: #3b63fb; /* Default link color */
+  padding: 0;
+  border: none;
+  text-decoration: underline;
+}
+
+.ai-footer-columns-wrapper a.button:hover {
+  color: #1d3ecf; /* Link hover color */
+}
