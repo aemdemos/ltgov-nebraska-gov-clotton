@@ -87,6 +87,15 @@ header nav .nav-sections {
   justify-content: space-between; /* evenly distribute items */
   width: 100%; /* ensure sections take full width */
     background-color: #1a1a1a;
+    height: 50px;
+    align-items: center;
+    padding-left: 10%;
+}
+
+header nav .nav-sections .default-content-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 header nav .nav-sections ul {
@@ -104,6 +113,12 @@ header nav .nav-sections ul > li {
   margin: 0 10px; /* adjust spacing between list items */
 }
 
+header nav .nav-sections ul > li:hover
+{
+    text-decoration: none;
+    background-color: #444;
+}
+
 header nav .nav-sections ul > li > ul {
   margin-top: 0;
   display: none; /* hide sub-menu by default */
@@ -112,8 +127,9 @@ header nav .nav-sections ul > li > ul {
 header nav .nav-sections ul > li:hover > ul {
   display: block; /* show sub-menu on hover */
   position: absolute;
-  background-color: #1a1a1a; /* dark background for sub-menu */
+  background-color: #444; /* dark background for sub-menu */
   padding: 10px;
+    width: 15%;
 }
 
 header nav .nav-sections ul > li > ul > li {
