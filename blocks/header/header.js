@@ -163,4 +163,50 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  // Select the elements you want to move
+  const navBrand1 = document.querySelector('nav .section.nav-brand');
+  const navSections1 = document.querySelector('nav .section.nav-sections');
+
+  const newDiv = document.createElement('div');
+  newDiv.classList.add('sections-container'); // Add a class to the new div (optional)
+
+  if (navBrand1) {
+    newDiv.appendChild(navBrand1);
+  }
+
+  if (navSections1) {
+    newDiv.appendChild(navSections1);
+  }
+
+  const navElement = document.getElementById('nav');
+  if (navElement) {
+    navElement.appendChild(newDiv);
+  }
+
+  const targetAnchor = document.querySelector('header nav .sections-container .nav-brand .default-content-wrapper p:nth-child(2) a');
+  console.log(targetAnchor);
+  if (targetAnchor) {
+    const textNode = Array.from(targetAnchor.childNodes).find((node) => node.nodeType === Node.TEXT_NODE && node.nodeValue.includes('LT. GOVERNOR JOE KELLY'));
+    console.log(textNode);
+    if (textNode) {
+      // Split the text content at the desired position
+      const [beforeText, afterText] = textNode.nodeValue.split('LT. GOVERNOR JOE KELLY');
+
+      // Update the original text node
+      textNode.nodeValue = `${beforeText}LT. GOVERNOR JOE KELLY`;
+
+      // Create a new element to insert after the text
+      const newElement = document.createElement('br');
+
+      // Insert the new element after the text
+      targetAnchor.insertBefore(newElement, textNode.nextSibling);
+
+      // If there's any remaining text, add it back
+      if (afterText.trim()) {
+        const remainingTextNode = document.createTextNode(afterText);
+        targetAnchor.insertBefore(remainingTextNode, newElement.nextSibling);
+      }
+    }
+  }
 }

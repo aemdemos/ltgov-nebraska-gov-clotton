@@ -17,16 +17,21 @@ header nav {
   align-items: center; /* vertically center the items */
   justify-content: space-between; /* space out the items evenly */
   margin: auto;
-  max-width: 1264px;
-  height: var(--nav-height);
-  padding: 0 24px;
+    width: 100%;
+    background-color: #273748;
   font-family: var(--body-font-family);
 }
+
+header nav .sections-container {
+    width: 100%;
+}
+
 
 header nav p {
   margin: 0;
   line-height: 1;
 }
+
 
 header nav a:any-link {
   color: white; /* set link color to white */
@@ -50,8 +55,25 @@ header nav .nav-brand {
   line-height: 1;
 }
 
+header nav .sections-container .nav-brand .default-content-wrapper p:nth-child(2) a {
+    text-align: left;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+header nav .nav-brand .default-content-wrapper
+{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: .4%;
+    margin-bottom: .4%;
+    text-shadow: 3px 3px 2px rgb(42 42 42);
+    font-size: 19px;
+}
+
 header nav .nav-brand img {
-  width: 128px;
+  width: 75px;
   height: auto;
   object-fit: contain;
 }
@@ -64,6 +86,16 @@ header nav .nav-sections {
   flex-direction: row; /* align items side by side */
   justify-content: space-between; /* evenly distribute items */
   width: 100%; /* ensure sections take full width */
+    background-color: #1a1a1a;
+    height: 50px;
+    align-items: center;
+    padding-left: 10%;
+}
+
+header nav .nav-sections .default-content-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 header nav .nav-sections ul {
@@ -81,6 +113,12 @@ header nav .nav-sections ul > li {
   margin: 0 10px; /* adjust spacing between list items */
 }
 
+header nav .nav-sections ul > li:hover
+{
+    text-decoration: none;
+    background-color: #444;
+}
+
 header nav .nav-sections ul > li > ul {
   margin-top: 0;
   display: none; /* hide sub-menu by default */
@@ -89,8 +127,9 @@ header nav .nav-sections ul > li > ul {
 header nav .nav-sections ul > li:hover > ul {
   display: block; /* show sub-menu on hover */
   position: absolute;
-  background-color: #1a1a1a; /* dark background for sub-menu */
+  background-color: #444; /* dark background for sub-menu */
   padding: 10px;
+    width: 15%;
 }
 
 header nav .nav-sections ul > li > ul > li {
