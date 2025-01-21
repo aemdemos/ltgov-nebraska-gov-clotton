@@ -11,8 +11,7 @@
   flex-direction: row; /* Side-by-side layout */
   gap: 20px; /* Space between the two columns */
   align-items: flex-start; /* Align items to the top */
-    background-color: rgba(255, 255, 255, 0.75);
-
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 /* Image container styling */
@@ -40,7 +39,7 @@
   flex: 1; /* Allow it to grow and fill the space */
   gap: 20px; /* Increase space between headings and paragraphs */
   text-align: left; /* Ensure text is aligned to the left */
-  padding: 20px;
+  padding: 10px 10px 10px 20px;
 }
 
 /* Ensure the image is responsive */
