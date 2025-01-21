@@ -23,11 +23,15 @@
   flex-direction: row;
   align-items: flex-start; /* Align to the top left */
   justify-content: flex-start; /* Align to the top */
-  text-align: center; /* Ensure text is aligned to the left */
+  text-align: left; /* Ensure text is aligned to the left */
 }
 
 /* Image container styling */
 .ai-index-columns-wrapper .ai-index-columns > div:first-child p {
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+.ai-index-columns-wrapper .ai-index-columns > div:first-child p:last-child {
     text-align: center; /* Ensure text is aligned to the left */
 }
 
