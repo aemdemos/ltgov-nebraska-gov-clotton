@@ -3,7 +3,6 @@
 .ai-index-columns-wrapper {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 /* Ensure the columns are side-by-side */
@@ -11,8 +10,6 @@
   display: flex;
   flex-direction: row; /* Side-by-side layout */
   gap: 20px; /* Space between the two columns */
-  width: 100%;
-  max-width: 1200px; /* Adjust max width as needed */
   align-items: flex-start; /* Align items to the top */
 }
 
@@ -33,16 +30,16 @@
 
 .ai-index-columns-wrapper .ai-index-columns > div:first-child p:last-child {
     text-align: center; /* Ensure text is aligned to the left */
+    line-height: 0.4em;
 }
 
 /* Text content container styling */
 .ai-index-columns-wrapper .ai-index-columns > div:last-child {
   flex: 1; /* Allow it to grow and fill the space */
-  display: flex;
-  flex-direction: row; /* Ensure nested elements are stacked vertically */
   gap: 20px; /* Increase space between headings and paragraphs */
   text-align: left; /* Ensure text is aligned to the left */
   background-color: rgba(255, 255, 255, 0.7);
+  padding-left: 20px;
 }
 
 /* Ensure the image is responsive */
