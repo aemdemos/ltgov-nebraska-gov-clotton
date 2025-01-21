@@ -40,7 +40,7 @@
   flex: 1; /* Allow it to grow and fill the space */
   gap: 20px; /* Increase space between headings and paragraphs */
   text-align: left; /* Ensure text is aligned to the left */
-  padding-left: 20px;
+  padding: 20px;
 }
 
 /* Ensure the image is responsive */
