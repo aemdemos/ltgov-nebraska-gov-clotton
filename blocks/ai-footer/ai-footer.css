@@ -55,6 +55,7 @@
     display: flex; /* Use flexbox for layout */
     width: 100%;
     align-items: flex-start; /* Center elements horizontally */
+    font-size: 15px; /* Set font size */
 }
 
 .ai-footer a.button:any-link {
