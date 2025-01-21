@@ -143,10 +143,6 @@ pre {
   white-space: pre;
 }
 
-main>div {
-  margin: 40px 16px;
-}
-
 input, textarea, select, button {
   font: inherit;
 }
@@ -214,7 +210,6 @@ a.button.secondary, button.secondary {
 
 /* sections */
 main>.section {
-  margin: 40px 0;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
