@@ -13,7 +13,6 @@
   gap: 20px; /* Space between the two columns */
   width: 100%;
   max-width: 1200px; /* Adjust max width as needed */
-  margin: 20px auto; /* Center the block and add vertical margin */
   align-items: flex-start; /* Align items to the top */
 }
 
