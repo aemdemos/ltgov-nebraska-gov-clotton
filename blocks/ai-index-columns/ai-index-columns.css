@@ -24,11 +24,6 @@
   text-align: left; /* Ensure text is aligned to the left */
 }
 
-/* Image container styling */
-.ai-index-columns-wrapper .ai-index-columns > div:first-child p {
-    text-align: left; /* Ensure text is aligned to the left */
-}
-
 /* Text content container styling */
 .ai-index-columns-wrapper .ai-index-columns > div:last-child {
   flex: 1; /* Allow it to grow and fill the space */
