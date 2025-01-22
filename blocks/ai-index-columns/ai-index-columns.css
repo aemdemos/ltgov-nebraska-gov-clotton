@@ -29,11 +29,6 @@
     text-align: left; /* Ensure text is aligned to the left */
 }
 
-.ai-index-columns-wrapper .ai-index-columns > div:first-child p:last-child {
-    text-align: center; /* Ensure text is aligned to the left */
-    line-height: 0.4em;
-}
-
 /* Text content container styling */
 .ai-index-columns-wrapper .ai-index-columns > div:last-child {
   flex: 1; /* Allow it to grow and fill the space */
