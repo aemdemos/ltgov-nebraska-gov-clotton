@@ -15,4 +15,11 @@ export default function decorate(block) {
       }
     });
   });
+
+  const links = block.querySelectorAll('.ai-index-columns-container a');
+  if (links.length > 0) {
+    links.forEach((link) => {
+      link.classList.remove('button');
+    });
+  }
 }

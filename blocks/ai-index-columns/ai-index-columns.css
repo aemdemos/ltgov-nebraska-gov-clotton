@@ -29,6 +29,10 @@
     text-align: center
 }
 
+.ai-index-columns-wrapper .ai-index-columns .button-container {
+    text-align: left;
+}
+
 /* Text content container styling */
 .ai-index-columns-wrapper .ai-index-columns > div:last-child {
   flex: 1; /* Allow it to grow and fill the space */
